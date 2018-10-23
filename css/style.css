@@ -1,5 +1,7 @@
 body {
 	background-color: #071422;
+	color:white;
+
 }
 
 .navibar {
@@ -11,10 +13,23 @@ body {
 	padding-left:30px;
 	position: fixed;
 }
+.media-controls {
+	width:100%;
+	text-align: center;
+	top:12px;
+	position: absolute;
+}
+	.media-button {
+		width:25px;
+	}
 
 .prompter {
 	color:white;
 	font-size:100px;
 	padding:50px 15px 0 15px;
 	line-height: 1.2;
+}
+.prompter::selection {
+	background:red;
+	color:white;
 }
