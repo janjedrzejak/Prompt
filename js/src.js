@@ -1,25 +1,37 @@
-var scroll_speed = 100000;
-		
+var i=0;
+var scroll_speed=100000;
+
+
+function change_speed() {
+    scroll_speed = document.getElementById("speed").value;
+    scroll_speed*=100;
+    console.log(scroll_speed);
+}
+
 $(document).ready(function() {
-$("#down").click(function() {
-     $('body').animate({
-         scrollTop: $("#elementtoScrollToID").offset().top
-     }, scroll_speed, "linear");
+$("#play").click(function() {
+	if(i==0) {
+		document.getElementById("play-button").src="img/svg/icon_stop.svg";
+		i++;
+		console.log('is scrolling');
+	     $('body').animate({ scrollTop: $("#end").offset().top }, scroll_speed, "linear");
+ 	} else {
+ 		i--;
+ 		window.location.reload(false);
+ 	}
  });
 });
 
 $(document).ready(function() {
-$("#up").click(function() {
-     $('body').animate({
-         scrollTop: $("body").offset().top
-     }, 1000);
+$("#on-start").click(function() {
+     $('body').animate({ scrollTop: $("body").offset().top }, 300);
+     console.log('is on top');
  });
 });
 
 $(document).ready(function() {
-$( "#pause" ).click(function() {
-	console.log('a');
-  window.location.reload(false);
-
-});
+$("#on-end").click(function() {
+     $('body').animate({ scrollTop: $("#end").offset().top }, 300);
+     console.log('is on end');
+ });
 });

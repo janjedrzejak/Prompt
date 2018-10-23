@@ -5,6 +5,7 @@ body {
 }
 
 .navibar {
+
 	background-color: #030a11;
 	width:100%;
 	height:50px;
@@ -14,21 +15,34 @@ body {
 	position: fixed;
 }
 .media-controls {
-	width:100%;
+	width:70%;
 	text-align: center;
 	top:12px;
 	position: absolute;
+	display: inline;
 }
 	.media-button {
 		width:25px;
+		margin-left:20px;
 	}
+	.speed-control {
+		margin-top:2px;
+		width: 30%;
+		position: absolute;
+		display: inline;
+	}
+		#speed {
+			width:200px;
+		}
+
 
 .prompter {
 	color:white;
 	font-size:100px;
-	padding:50px 15px 0 15px;
+	padding:50px 15px 50px 15px;
 	line-height: 1.2;
 }
+
 .prompter::selection {
 	background:red;
 	color:white;
