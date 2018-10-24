@@ -26,3 +26,4 @@ index.php?page=install
 ## Future functionalities
 * mirror flip option
 * dynamically speed change
+* responsive layout
