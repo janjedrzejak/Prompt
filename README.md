@@ -22,3 +22,7 @@ index.php?page=install
 ![Screen](https://github.com/janjedrzejak/Prompt/blob/demo/demo/1.png?raw=true)
 ![Screen](https://github.com/janjedrzejak/Prompt/blob/demo/demo/2.png?raw=true)
 ![Screen](https://github.com/janjedrzejak/Prompt/blob/demo/demo/3.png?raw=true)
+
+## Future functionalities
+* mirror flip option
+* dynamically speed change
