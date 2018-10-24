@@ -11,4 +11,9 @@ A simple television and conference prompter.
 * MongoDB
 ## Quick install
 * Clone this repository
-* Open index.html
+* Open index.php with parameters (for the first time):
+```
+index.php?page=install
+```
+* Open index.php
+* Use the Prompt
