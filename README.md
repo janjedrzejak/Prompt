@@ -1,6 +1,6 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-# TV-Prompt
+# Prompt
 A simple television and conference prompter. 
 ## Technologies
 * HTML5
