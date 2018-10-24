@@ -19,4 +19,6 @@ index.php?page=install
 * Use the Prompt
 
 ## Screenshots
-
+![Screen](https://github.com/janjedrzejak/Prompt/blob/Demo/screenshots/1.jpg?raw=true)
+![Screen](https://github.com/janjedrzejak/Prompt/blob/Demo/screenshots/2.jpg?raw=true)
+![Screen](https://github.com/janjedrzejak/Prompt/blob/Demo/screenshots/3.jpg?raw=true)
