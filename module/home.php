@@ -15,7 +15,7 @@
 	<body>
 		<div class="center-box">
 			<img src="img/logo.png">
-			<form action="prompter.html" method="POST">
+			<form action="index.php?page=prompter" method="POST">
 				<textarea name="text" class="input-text"></textarea>
 				<input type="submit" name="submit" class="submit" value="wyślij na prompter">
 			</form>
