@@ -35,3 +35,9 @@ $("#on-end").click(function() {
      console.log('is on end');
  });
 });
+
+$(document).ready(function() {
+$("#full-screen").click(function() {
+    $("html, body")[0].webkitRequestFullScreen();
+ });
+});

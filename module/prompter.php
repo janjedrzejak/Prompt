@@ -11,30 +11,31 @@
 	<link rel="icon" href="img/favicon.ico">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/src.js"></script>
+
 	</head>
 	<body>
 		<div class="navibar">
-			<img src="img/logo.png">
+			<a href="index.php?page=home"><img src="img/logo.png" class="logo"></a>
 			<div class="media-controls">
 				<a id="on-start" href="#"><img src="img/svg/icon_start.svg" class="media-button"></a>
 				<a id="play" href="#"><img src="img/svg/icon_play.svg" class="media-button" id="play-button"></a>
 				<a id="on-end" href="#"><img src="img/svg/icon_end.svg" class="media-button"></a>
-				<div class="speed-control">
-				<input type="range" id="speed" min="0" max="2000" value="1000" onchange="change_speed()">
+				<a id="full-screen" href="#"><img src="img/svg/icon_full.svg" class="media-button" id="full-screen-button"></a>
 			</div>
+			<div class="speed-control">
+					<input type="range" id="speed" min="0" max="10000" value="1000" onchange="change_speed()">
+			</div>
+			<div class="additonal-controls">
+					<a id="" href="index.php?page=home">DODAJ AKAPIT</a>
+					<a id="" href="index.php?page=clear_prompt_text">CZYŚĆ</a>
 			</div>
 		</div>
 
 		<div class="prompter">
-				Lorem ipsum dolor sit amet, posse inani cu usu, qui nusquam appareat cu. Reque viderer assueverit no per, at unum oblique sed. Ut justo consectetuer sit, mel dico quot vivendo at. Ut duo lucilius adipiscing, sonet moderatius efficiantur vix ad, ius verear inermis convenire ne. Et vel dicat prompta vulputate, duis adipisci ullamcorper eum in. Augue aperiam eos at, ad usu periculis accusamus eloquentiam, nec dicat nihil te.
-				Lorem ipsum dolor sit amet, posse inani cu usu, qui nusquam appareat cu. Reque viderer assueverit no per, at unum oblique sed. Ut justo consectetuer sit, mel dico quot vivendo at. Ut duo lucilius adipiscing, sonet moderatius efficiantur vix ad, ius verear inermis convenire ne. Et vel dicat prompta vulputate, duis adipisci ullamcorper eum in. Augue aperiam eos at, ad usu periculis accusamus eloquentiam, nec dicat nihil te.
-				Lorem ipsum dolor sit amet, posse inani cu usu, qui nusquam appareat cu. Reque viderer assueverit no per, at unum oblique sed. Ut justo consectetuer sit, mel dico quot vivendo at. Ut duo lucilius adipiscing, sonet moderatius efficiantur vix ad, ius verear inermis convenire ne. Et vel dicat prompta vulputate, duis adipisci ullamcorper eum in. Augue aperiam eos at, ad usu periculis accusamus eloquentiam, nec dicat nihil te.
-				Lorem ipsum dolor sit amet, posse inani cu usu, qui nusquam appareat cu. Reque viderer assueverit no per, at unum oblique sed. Ut justo consectetuer sit, mel dico quot vivendo at. Ut duo lucilius adipiscing, sonet moderatius efficiantur vix ad, ius verear inermis convenire ne. Et vel dicat prompta vulputate, duis adipisci ullamcorper eum in. Augue aperiam eos at, ad usu periculis accusamus eloquentiam, nec dicat nihil te.
-				Lorem ipsum dolor sit amet, posse inani cu usu, qui nusquam appareat cu. Reque viderer assueverit no per, at unum oblique sed. Ut justo consectetuer sit, mel dico quot vivendo at. Ut duo lucilius adipiscing, sonet moderatius efficiantur vix ad, ius verear inermis convenire ne. Et vel dicat prompta vulputate, duis adipisci ullamcorper eum in. Augue aperiam eos at, ad usu periculis accusamus eloquentiam, nec dicat nihil te.
-				Lorem ipsum dolor sit amet, posse inani cu usu, qui nusquam appareat cu. Reque viderer assueverit no per, at unum oblique sed. Ut justo consectetuer sit, mel dico quot vivendo at. Ut duo lucilius adipiscing, sonet moderatius efficiantur vix ad, ius verear inermis convenire ne. Et vel dicat prompta vulputate, duis adipisci ullamcorper eum in. Augue aperiam eos at, ad usu periculis accusamus eloquentiam, nec dicat nihil te.
-				Lorem ipsum dolor sit amet, posse inani cu usu, qui nusquam appareat cu. Reque viderer assueverit no per, at unum oblique sed. Ut justo consectetuer sit, mel dico quot vivendo at. Ut duo lucilius adipiscing, sonet moderatius efficiantur vix ad, ius verear inermis convenire ne. Et vel dicat prompta vulputate, duis adipisci ullamcorper eum in. Augue aperiam eos at, ad usu periculis accusamus eloquentiam, nec dicat nihil te.
-				Lorem ipsum dolor sit amet, posse inani cu usu, qui nusquam appareat cu. Reque viderer assueverit no per, at unum oblique sed. Ut justo consectetuer sit, mel dico quot vivendo at. Ut duo lucilius adipiscing, sonet moderatius efficiantur vix ad, ius verear inermis convenire ne. Et vel dicat prompta vulputate, duis adipisci ullamcorper eum in. Augue aperiam eos at, ad usu periculis accusamus eloquentiam, nec dicat nihil te.
-	<div id="end">a</div>
+			<?php
+				require 'read_prompt_text.php';
+			?>	
+		<div id="end"></div>
 		</div>
 		
 	

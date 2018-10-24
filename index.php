@@ -1,6 +1,5 @@
 <?php
 	require 'vendor/autoload.php';
-	
 
 	if(array_key_exists('page', $_GET)) {
 		$module = htmlspecialchars($_GET['page']);
@@ -14,6 +13,5 @@
 		require($moduleDir);
 	} else {
 		header("HTTP/1.1 404 Not Found");
-		require('modules/404.php');
 	}
 ?>
