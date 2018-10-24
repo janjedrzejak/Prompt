@@ -7,6 +7,8 @@ A simple television and conference prompter.
 * CSS3
 * JavaScript
 * jQuery
+* PHP7
+* MongoDB
 ## Quick install
 * Clone this repository
 * Open index.html
