@@ -21,7 +21,7 @@
 To jest prompter telewizyjno - konferencyjny. 
 W tym oknie umieść tekst, który chcesz wyświetlić."
 				></textarea>
-				<input type="text" name="nick" placeholder="nick">
+				<input type="text" name="nick"  class="nick" placeholder="nick">
 				<input type="submit" name="submit" class="submit" value="wyślij na prompter">
 			</form>
 		</div>

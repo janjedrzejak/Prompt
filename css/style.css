@@ -24,7 +24,7 @@ body {
 	height:380px;
 	resize: none;
 	color:white;
-	background-color: #030a11;
+	background-color: #071422;
 	border: 1px solid white;
 }
 
@@ -32,6 +32,16 @@ body {
 	background:red;
 	color:white;
 }
+
+.nick {
+ 	width:180px;
+	height:40px;
+	margin-top:27px;
+	background-color: #071422;
+	color:white;
+	border:1px solid white;
+	text-align: center;
+ }
 
 .submit {
 	width:180px;
