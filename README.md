@@ -17,3 +17,6 @@ index.php?page=install
 ```
 * Open index.php
 * Use the Prompt
+
+## Screenshots
+
