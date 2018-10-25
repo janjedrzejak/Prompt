@@ -13,7 +13,7 @@
 	<script src="js/src.js"></script>
 
 	</head>
-	<body>
+	<body id="body">
 		<div class="navibar">
 			<a href="index.php?page=home"><img src="img/logo.png" class="logo"></a>
 			<div class="media-controls">
@@ -21,6 +21,7 @@
 				<a id="play" href="#"><img src="img/svg/icon_play.svg" class="media-button" id="play-button"></a>
 				<a id="on-end" href="#"><img src="img/svg/icon_end.svg" class="media-button"></a>
 				<a id="full-screen" href="#"><img src="img/svg/icon_full.svg" class="media-button" id="full-screen-button"></a>
+				<a id="flip-screen" href="#"><img src="img/svg/icon_flip.svg" class="media-button" id="flip-screen-button"></a>
 			</div>
 			<div class="speed-control">
 					<input type="range" id="speed" min="0" max="10000" value="1000" onchange="change_speed()">
@@ -31,7 +32,8 @@
 			</div>
 		</div>
 
-		<div class="prompter">
+		<div class="prompter" id="prompter">
+		<div id="start"></div>
 			<?php
 				require 'read_prompt_text.php';
 			?>	

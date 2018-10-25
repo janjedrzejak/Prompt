@@ -41,3 +41,10 @@ $("#full-screen").click(function() {
     $("html, body")[0].webkitRequestFullScreen();
  });
 });
+
+$(document).ready(function() {
+$("#flip-screen").click(function() {
+    document.getElementById("body").style.transform = "scale(-1, -1)";
+    $('body').animate({ scrollTop: $("#start").offset().top }, 300);
+ });
+});
