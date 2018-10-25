@@ -1,7 +1,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Prompt
-A simple television and conference prompter. 
+A simple television and conference prompter. You can read your text in mirror flip mode or normal mode.
 ## Technologies
 * HTML5
 * CSS3
@@ -24,6 +24,5 @@ index.php?page=install
 ![Screen](https://github.com/janjedrzejak/Prompt/blob/demo/demo/3.png?raw=true)
 
 ## Future functionalities
-* mirror flip option
 * dynamically speed change
 * responsive layout
