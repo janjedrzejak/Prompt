@@ -1,4 +1,4 @@
-var i=0;
+var i= [];
 var scroll_speed=100000;
 
 
@@ -8,15 +8,16 @@ function change_speed() {
     console.log(scroll_speed);
 }
 
+i[0]=0;
 $(document).ready(function() {
 $("#play").click(function() {
-	if(i==0) {
+	if(i[0]==0) {
 		document.getElementById("play-button").src="img/svg/icon_stop.svg";
-		i++;
+		i[0]++;
 		console.log('is scrolling');
 	     $('body').animate({ scrollTop: $("#end").offset().top }, scroll_speed, "linear");
  	} else {
- 		i--;
+ 		i[0]--;
  		window.location.reload(false);
  	}
  });
@@ -42,9 +43,17 @@ $("#full-screen").click(function() {
  });
 });
 
+i[1]=0;
 $(document).ready(function() {
 $("#flip-screen").click(function() {
-    document.getElementById("body").style.transform = "scale(-1, -1)";
-    $('body').animate({ scrollTop: $("#start").offset().top }, 300);
+    if(i[1]==0) {
+        document.getElementById("body").style.transform = "scale(-1, -1)";
+        $('body').animate({ scrollTop: $("#start").offset().top }, 300);
+        i[1]++;
+    } else {
+        document.getElementById("body").style.transform = "scale(1, 1)";
+        $('body').animate({ scrollTop: $("body").offset().top }, 300);
+        i[1]--;
+    }
  });
 });
